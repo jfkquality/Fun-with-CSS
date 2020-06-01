@@ -1,0 +1,25 @@
+a {
+    /* color: purple; */
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+}
+a::after {
+    border-radius: 1em;
+    border-top: .1em solid rgb(124, 68, 124);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .05em;
+    left: 0;
+    transition: right .4s ease,
+                border-color .4s ease-out;
+}
+a:hover {
+    /* color: purple; */
+    text-decoration: none;
+}
+a:hover::after {
+    /* border-color: purple; */
+    right: 0;
+}
